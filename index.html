@@ -1,0 +1,179 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="src/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="src/images/favicon.ico" type="image/x-icon" />
+    <script defer src="src/js/controller.js"></script>
+    <title>Recipe Finder v1.0</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-col">
+        <a href="index.html"> <img src="src/images/logo.png" class="logo" /></a>
+        <div class="content-box">
+          <h1 class="heading--1">Spicy chicken and pepper jack pizza</h1>
+          <img src="/src/images/pizza.jpg" class="main-img" alt="" />
+          <div class="recipe__details">
+            <div class="recipe__info">
+              <svg class="recipe__info-icon">
+                <use href="src/images/icons.svg#icon-clock"></use>
+              </svg>
+              <span class="recipe__info-data recipe__info-data--minutes"
+                >45</span
+              >
+              <span class="recipe__info-text">minutes</span>
+            </div>
+            <div class="recipe__info">
+              <svg class="recipe__info-icon">
+                <use href="src/images/icons.svg#icon-users"></use>
+              </svg>
+              <span class="recipe__info-data recipe__info-data--people">4</span>
+              <span class="recipe__info-text">servings</span>
+            </div>
+          </div>
+
+          <div class="recipe__ingredients">
+            <h2 class="heading--2">Recipe ingredients</h2>
+            <ul class="recipe__ingredient-list">
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">1</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">tbsp.</span>
+                  canola or olive oil
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">3</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">cups</span>
+                  diced fresh red yellow and green bell peppers
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">1/2</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">cup</span>
+                  salsa
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity"></div>
+                <div class="recipe__description">
+                  <span class="recipe__unit"></span>
+                  Chopped cilantro or dried oregano
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">1/2</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">cup</span>
+                  chopped sweet onion
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">1</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">tube</span>
+                  tube refrigerated pizza dough
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">2</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">cups</span>
+                  sargento chefstyle shredded pepper jack cheese
+                </div>
+              </li>
+
+              <li class="recipe__ingredient">
+                <svg class="recipe__icon">
+                  <use href="src/images/icons.svg#icon-check"></use>
+                </svg>
+                <div class="recipe__quantity">4</div>
+                <div class="recipe__description">
+                  <span class="recipe__unit">tbsps</span>
+                  milk
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <form class="search-box">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search over 1,000,000 recipes..."
+          />
+
+          <input type="submit" class="search-btn" value="" />
+        </form>
+
+        <div class="search-results">
+          <div class="message">
+            <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+            <img src="src/images/fast-food.png" class="message-img" />
+          </div>
+
+          <!-- <div class="spinner">
+            <svg>
+              <use href="src/images/icons.svg#icon-loader"></use>
+            </svg>
+          </div> -->
+        </div>
+        <div class="pagination-container">
+          <!-- <button class="btn--inline pagination__btn--prev">
+            <svg class="search__icon">
+              <use href="images/icons.svg#icon-arrow-left"></use>
+            </svg>
+            <span>Page 1</span>
+          </button>
+          <button class="btn--inline pagination__btn--next">
+            <span>Page 3</span>
+            <svg class="search__icon">
+              <use href="images/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </button> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

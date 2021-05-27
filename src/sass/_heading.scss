@@ -1,0 +1,32 @@
+.logo {
+  width: 6rem;
+  margin: 1.5rem;
+}
+
+.heading {
+  &--1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    max-width: 28rem;
+  }
+
+  &--2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $color-primary;
+    text-transform: uppercase;
+    margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    display: none;
+  }
+
+  .heading {
+    &--1 {
+      font-size: 3rem;
+    }
+  }
+}

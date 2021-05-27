@@ -1,0 +1,85 @@
+.btn--inline {
+  color: $color-primary;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: $color-grey-light-1;
+  padding: 0.5rem 0.9rem;
+  border-radius: 10rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+
+  svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill: currentColor;
+    margin: 0 0.1rem;
+  }
+
+  span {
+    margin: 0 0.2rem;
+  }
+
+  &:hover {
+    color: $color-grad;
+    background-color: $color-grey-light-2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.message,
+.error {
+  max-width: 30rem;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-column: 1/ -1;
+
+  &-img {
+    width: 9rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    // margin-left: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+  grid-column: 1/ -1;
+
+  svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #fccfcf;
+    animation: rotate 2s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
